@@ -96,10 +96,6 @@ namespace CJBCheatsMenu.Framework.Cheats.PlayerAndTools
                 case Forest forest when forest.log != null:
                     clumps = clumps.Concat(new[] { forest.log });
                     break;
-
-                case Woods woods when woods.stumps.Any():
-                    clumps = clumps.Concat(woods.stumps);
-                    break;
             }
 
             return clumps;
