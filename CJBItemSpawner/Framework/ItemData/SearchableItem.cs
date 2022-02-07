@@ -29,7 +29,7 @@ namespace CJBItemSpawner.Framework.ItemData
         public string Name => this.Item.Name;
 
         /// <summary>The item's display name for the current language.</summary>
-        public string DisplayName => this.Item.DisplayName;
+        public string DisplayName => this.Item.DisplayName ?? this.Name;
 
 
         /*********

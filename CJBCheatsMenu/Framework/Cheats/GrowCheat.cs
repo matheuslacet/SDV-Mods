@@ -120,7 +120,7 @@ namespace CJBCheatsMenu.Framework.Cheats
                     case Crop crop when this.ShouldGrowCrops:
                         // grow crop using newDay to apply full logic like giant crops, wild seed randomization, etc
                         for (int i = 0; i < 100 && !crop.fullyGrown.Value; i++)
-                            crop.newDay(HoeDirt.watered, HoeDirt.fertilizerHighQuality, (int)tile.X, (int)tile.Y, location);
+                            crop.newDay(HoeDirt.watered, HoeDirt.fertilizerHighQuality.ToString(), (int)tile.X, (int)tile.Y, location);
 
                         // trigger regrowth logic for multi-harvest crops
                         crop.growCompletely();
